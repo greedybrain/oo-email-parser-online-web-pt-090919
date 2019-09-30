@@ -11,7 +11,6 @@ class EmailAddressParser
   end
   
   def parse
-    final_list = @email_list.split(',') || @email_list.split(' s')
     
   end
 
