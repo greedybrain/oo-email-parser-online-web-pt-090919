@@ -11,7 +11,14 @@ class EmailAddressParser
   end
   
   def parse
-    
+    test = "greedybrain18@gmail.com willisnaya@gmail.com, hottechandchill@gmail.com"
+
+consider_it_parsed = test.split(' ').collect do |val|
+  if val[-1] == ',' || val[-1] == ' '
+    val = val[0...-1]
+  end
+  val
+end
   end
 
 end
