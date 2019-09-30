@@ -16,7 +16,7 @@ class EmailAddressParser
         val = val[0...-1]
       end
       val
-    end
+    end.uniq
   end
 
 end
